@@ -8,7 +8,7 @@ def isWinner(x, lst):
     start = 0
     count = 0
 
-    if lst == None:
+    if lst is None:
         return None
 
     lst = sorted(lst)
