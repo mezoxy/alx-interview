@@ -24,9 +24,7 @@ def isWinner(x, lst):
             else:
                 roundsMria += 1
             count = 0
-    if roundsMria != 0:
-        return 'Maria' if roundsMria > roundsBen else 'Ben'
-    return 'Ben'
+    return 'Maria' if roundsMria > roundsBen else 'Ben'
 
 
 def isprime(num):
