@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+'''prime game'''
+
+
 def isWinner(x, lst):
     roundsMria = 0
     roundsBen = 0
