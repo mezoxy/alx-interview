@@ -9,7 +9,7 @@ def isWinner(x, lst):
     start = 0
     count = 0
 
-    if lst is None or lst == []:
+    if lst is None or lst == [] or x <= 0 or len(lst) != x:
         return None
 
     lst = sorted(lst)
