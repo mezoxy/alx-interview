@@ -16,9 +16,6 @@ def isWinner(x, lst):
 
     if lst is None or lst == [] or x <= 0 or len(lst) != x or x is None:
         return None
-    
-    if not isinstance(x, int):
-        return None
 
     lst = sorted(lst)
 
