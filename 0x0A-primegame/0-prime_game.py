@@ -20,14 +20,16 @@ def isWinner(x, lst):
     lst = sorted(lst)
 
     for number in range(1, lst[-1] + 1):
-        if number <= lst[start] and isprime(number):
+        if isprime(number):
             count += 1
-        if number > lst[start]:
-            start += 1
+        if number == lst[start]:
             if count % 2 == 0:
                 roundsBen += 1
             else:
                 roundsMaria += 1
+            start += 1
+            if start >= len(lst):
+                break
             count = 0
     return 'Maria' if roundsMaria > roundsBen else 'Ben'
 
