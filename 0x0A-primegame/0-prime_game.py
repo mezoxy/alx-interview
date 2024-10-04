@@ -30,6 +30,9 @@ def isWinner(x, lst):
             start += 1
             if start >= len(lst):
                 break
+    if roundsMaria == roundsBen:
+        return None
+
     return 'Maria' if roundsMaria > roundsBen else 'Ben'
 
 
