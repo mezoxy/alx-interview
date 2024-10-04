@@ -36,10 +36,3 @@ def isprime(num):
             if num % i == 0:
                 return False
     return False
-
-def check(lst):
-    '''check: to check if all the numbers are positive'''
-    for i in lst:
-        if i <= 0 :
-            return False
-    return True
