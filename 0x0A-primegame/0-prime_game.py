@@ -9,7 +9,7 @@ def isWinner(x, lst):
     start = 0
     count = 0
 
-    if lst is None or lst == [] or x <= 0 or len(lst) != x or x is None:
+    if lst is None or lst == [] or x <= 0 or len(lst) != x or x is None and check(lst):
         return None
 
     lst = sorted(lst)
@@ -36,3 +36,10 @@ def isprime(num):
             if num % i == 0:
                 return False
     return False
+
+def check(lst):
+    '''check: to check if all the numbers are positive'''
+    for i in lst:
+        if i <= 0 :
+            return False
+    return True
