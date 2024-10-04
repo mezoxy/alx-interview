@@ -3,8 +3,13 @@
 
 
 def isWinner(x, lst):
-    '''isWinner: to determine the wimer'''
-    roundsMria = 0
+    '''isWinner: to determine the winneer
+        Args:
+            x: number of rounds
+            lst: An array of integers
+        Return: The winner Maria or Ben
+    '''
+    roundsMaria = 0
     roundsBen = 0
     start = 0
     count = 0
@@ -22,9 +27,9 @@ def isWinner(x, lst):
             if count % 2 == 0:
                 roundsBen += 1
             else:
-                roundsMria += 1
+                roundsMaria += 1
             count = 0
-    return 'Maria' if roundsMria > roundsBen else 'Ben'
+    return 'Maria' if roundsMaria > roundsBen else 'Ben'
 
 
 def isprime(num):
